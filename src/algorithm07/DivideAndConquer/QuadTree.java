@@ -1,4 +1,4 @@
-package study07.DivideAndConquer;
+package algorithm07.DivideAndConquer;
 
 import java.util.Vector;
 
