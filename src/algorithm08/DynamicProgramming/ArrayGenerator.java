@@ -20,6 +20,12 @@ public class ArrayGenerator {
 		return array;
 	}
 	
+	public static int[] generate1d(int size){
+		int[] array = new int[size];
+		for(int i=0; i<size; i++)array[i] = -1;
+		return array;
+	}
+	
 	public static double[][] generateDouble(int row, int col){
 		double[][] array = new double[row][col];
 		for(int i=0; i<row; i++){
