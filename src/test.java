@@ -1,10 +1,13 @@
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class test {
 
 	public static void main(String[] args) {
-		String a = "abcdef";
-		System.out.println(a.indexOf("def"));
-
+		boolean[] test = new boolean[3];
+		for(int i=0; i<3; i++){
+			System.out.println(test[i]);
+		}
 
 	}
 

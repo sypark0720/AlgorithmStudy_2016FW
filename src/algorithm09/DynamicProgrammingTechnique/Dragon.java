@@ -1,4 +1,4 @@
-package altorithm09.DynamicProgrammingTechnique;
+package algorithm09.DynamicProgrammingTechnique;
 
 public class Dragon {
 
