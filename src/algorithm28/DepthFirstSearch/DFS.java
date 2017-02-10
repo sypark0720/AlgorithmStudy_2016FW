@@ -11,8 +11,8 @@ public class DFS {
 		super();
 		this.adj = adj;
 		this.visited = new boolean[adj.size()];
-		
 	}
+	
 	
 	private void dfs(int here){
 		System.out.println("DFS visits: "+here);
@@ -25,6 +25,7 @@ public class DFS {
 		}
 		//재귀호출 종료
 	}
+	
 	
 	public void dfsAll(){
 		for(int i=0; i<adj.size(); ++i)

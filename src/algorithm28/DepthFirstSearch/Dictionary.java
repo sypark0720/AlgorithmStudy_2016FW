@@ -4,17 +4,31 @@ import java.util.ArrayList;
 
 public class Dictionary {
 	
-	static ArrayList<ArrayList<Integer>> constructgraph(String[] words){
+	static int[][] constructgraph(String[] words){
+		int[][] adj = new int[26][26];
 		
-		return ;
+		for(int j=1; j<words.length; ++j){
+			int i = j-1;
+			int len = Integer.min(words[i].length(), words[j].length());
+			
+			for(int k=0; k<len; ++k)
+				if(words[i].charAt(k) != words[j].charAt(k)){
+					int a = words[i].charAt(k) - 'a';
+					int b = words[j].charAt(k) - 'a';
+					adj[a][b] = 1;
+					break;
+				}
+		}
+		
+		return adj;
 	}
 	
 	
 	public static void main(String[] args) {
 		String[] words = { "gg", "kia", "lotte", "lg", "hanhwa" };
 		
-		ArrayList<ArrayList<Integer>> dgraph = constructgraph(words);
-		DFS dfs = new DFS(dgraph);
+		int[][] dgraph = constructgraph(words);
+
 
 	}
 
