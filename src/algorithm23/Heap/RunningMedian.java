@@ -1,4 +1,4 @@
-package altorithm23.Heap;
+package algorithm23.Heap;
 
 import algorithm19.QueueStackDequeue.RNG;
 
